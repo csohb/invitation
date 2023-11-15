@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title>초대장</title>
+<meta charset="utf-8">
+    <link href="style/mail.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="container">
+  
+        <div class="envelope">
+          <div class="paper">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="noti">1</div>
+          </div>
+        </div>
+        
+        <div class="open"></div>
+        
+        <a href="javascript:">Open</a>
+        
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+$(document).ready(function() {
+        $('a').on('click', function(event) {
+            event.preventDefault(); // Prevent the default behavior of the anchor tag
+            $('.container').addClass('is-active');
+            // Redirect to invitation.html after a short delay (e.g., 1000 milliseconds or 1 second)
+            setTimeout(function() {
+                window.location.href = 'invitation.html';
+            }, 3500);
+        });
+    });
+</script>
+</body>
+
+
+
+
+
